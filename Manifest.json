@@ -1,0 +1,12 @@
+{
+  "Name": "CheatToTestMods",
+  "Author": "Darkmushu1",
+  "Version": "1.0.0",
+  "Description": "Cheat codes to test Mod",
+  "UniqueID": "Darkmushu1.CheatToTestMods",
+  "EntryDll": "CheatToTestMods.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ ] //replace this text and 000001 with your nexus mode ID
+}
+
+
