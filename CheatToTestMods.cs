@@ -42,8 +42,34 @@ namespace CheatToTestMods
             }
             if (e.Button == SButton.P)
             {
+                /*
                 Game1.player.gainExperience(4, 1000);  //case 4 = Combat
                 Game1.addHUDMessage(new HUDMessage("Your Combat Level: " + Game1.player.combatLevel, 3));
+
+                */
+
+                
+                Item geode = new StardewValley.Object("535", 999); 
+                Game1.player.addItemToInventoryBool(geode);
+
+                Item FrozenGeode = new StardewValley.Object("536", 999); 
+                Game1.player.addItemToInventoryBool(geode);
+
+                Item MagmaGeode = new StardewValley.Object("537", 999);
+                Game1.player.addItemToInventoryBool(geode);
+
+                // Increase inventory size to 36
+                if (Game1.player.MaxItems < 5000)
+                {
+                    Game1.player.MaxItems = 5000;
+
+                }
+
+                //adds gold
+                Game1.player.Money += 500_000;
+
+
+
             }
 
             if (e.Button == SButton.O)
@@ -58,7 +84,7 @@ namespace CheatToTestMods
                 UpgradeTool();
             }
 
-            if (e.Button == SButton.H)
+            if (e.Button == SButton.Q)
             {
 
                 Game1.timeOfDay += 100;  //100 = 1 hour in game
